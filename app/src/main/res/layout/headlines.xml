@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:id="@+id/main_container"
+    android:layout_margin="8dp"
+    app:cardElevation="11dp"
+    app:cardCornerRadius="10dp"
+    android:backgroundTint="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    >
+
+    <ImageView
+      android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/headline_img"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher"
+        android:alpha="0.8">
+
+    </ImageView>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="bottom">
+
+    <TextView
+        android:id="@+id/news_heading1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="1"
+        android:fontFamily="@font/poppins_bold"
+
+        android:layout_margin="5dp"
+        android:text="Title"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/news_heading2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="1"
+        android:layout_margin="3dp"
+        android:text="Source"
+        android:fontFamily="@font/poppins_bold"
+
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+</LinearLayout>
+
+
+</FrameLayout>
+
+
+</androidx.cardview.widget.CardView>
