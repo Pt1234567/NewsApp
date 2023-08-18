@@ -19,6 +19,7 @@
             android:layout_width="wrap_content"
             android:layout_margin="8dp"
             android:text="general"
+            android:background="@drawable/buttonshape"
             android:textSize="14sp"
             android:padding="2dp"
             android:id="@+id/b1"
@@ -35,6 +36,7 @@
             android:layout_width="wrap_content"
             android:layout_margin="8dp"
             android:text="entertainment"
+            android:background="@drawable/buttonshape"
             android:textSize="14sp"
             android:padding="2dp"
             android:id="@+id/b3"
@@ -44,6 +46,7 @@
             android:layout_margin="8dp"
             android:text="health"
             android:textSize="14sp"
+            android:background="@drawable/buttonshape"
             android:padding="2dp"
             android:id="@+id/b4"
             android:layout_height="wrap_content"/>
@@ -51,6 +54,7 @@
             android:layout_width="wrap_content"
             android:layout_margin="8dp"
             android:text="science"
+            android:background="@drawable/buttonshape"
             android:textSize="14sp"
             android:padding="2dp"
             android:id="@+id/b5"
@@ -59,6 +63,7 @@
             android:layout_width="wrap_content"
             android:layout_margin="8dp"
             android:text="sports"
+            android:background="@drawable/buttonshape"
             android:textSize="14sp"
             android:padding="2dp"
             android:id="@+id/b6"
@@ -66,6 +71,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_margin="8dp"
+            android:background="@drawable/buttonshape"
             android:text="technology"
             android:textSize="14sp"
             android:padding="2dp"
@@ -73,21 +79,17 @@
             android:layout_height="wrap_content"/>
     </LinearLayout>
 </HorizontalScrollView>
-    
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="14dp"
-        app:cardElevation="8dp">
         <androidx.appcompat.widget.SearchView
+            android:layout_margin="12dp"
             android:layout_width="match_parent"
             app:defaultQueryHint="Search news....."
             app:iconifiedByDefault="false"
+            android:background="@drawable/search"
             android:layout_height="wrap_content"
             android:id="@+id/search_view">
 
         </androidx.appcompat.widget.SearchView>
-    </androidx.cardview.widget.CardView>
+
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"

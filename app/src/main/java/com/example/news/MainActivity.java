@@ -6,9 +6,11 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.Toast;
 
@@ -43,7 +45,14 @@ SearchView searchView;
                 dailog.show();
                 RequestManager manager=new RequestManager(MainActivity.this);
                 manager.getNewsHeadlines(listener,"general",query);
+                closeKeyboard();
+                searchView.clearFocus();
                 return true;
+            }
+
+            private void closeKeyboard() {
+                InputMethodManager inputMethodManager= (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+                inputMethodManager.hideSoftInputFromWindow(searchView.getWindowToken(),0);
             }
 
             @Override
