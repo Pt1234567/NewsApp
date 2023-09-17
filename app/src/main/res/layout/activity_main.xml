@@ -28,6 +28,7 @@
             android:layout_width="wrap_content"
             android:layout_margin="8dp"
             android:text="business"
+            android:background="@drawable/buttonshape"
             android:textSize="14sp"
             android:padding="2dp"
             android:id="@+id/b2"
